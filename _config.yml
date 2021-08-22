@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "꾸준히 발전해나가는 개발자가 되자"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "개발자가 되고싶은.."
+name                     : "SW developer"
 description              : "회사에서 월급받으면서 집에서도 코딩하는 개발자가 되고싶은 취준생"
 url                      : "https://tux31337.github.io/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -101,7 +101,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "개발자가 되고싶은"
+  name             : "SW developer"
   avatar           : "/assets/images/coding.jpg"
   bio              : "회사에서 월급받고 집에서도 코딩하는 개발자가 되고싶은 취준생.."
   location         : "South Korea"
