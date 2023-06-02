@@ -3,7 +3,7 @@ main:
   - title: "블로그 홈"
     url: https://tux31337.github.io/
   - title: "카테고리"
-    url: /category/
+    url: /categories/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
