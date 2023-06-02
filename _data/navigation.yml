@@ -4,8 +4,10 @@ main:
     url: https://tux31337.github.io/
   - title: "카테고리"
     url: /categories/
-  - title: "three.js"
-    url: /categories/Three.js/
+  - title: "Three.js"
+    url: /categories/threejs/
+  - title: "Tags"
+    url: /tags/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
