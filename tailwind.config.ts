@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   content: [
@@ -7,13 +8,123 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+    extend: {},
+    fontFamily: {
+      sans: ["var(--font-sans)"],
+    },
+    colors: {
+      amber: colors.amber,
+      black: colors.black,
+      blue: colors.blue,
+      cyan: colors.cyan,
+      emerald: colors.emerald,
+      fuchsia: colors.fuchsia,
+      gray: colors.gray,
+      green: colors.green,
+      indigo: colors.indigo,
+      lime: colors.lime,
+      neutral: colors.neutral,
+      orange: colors.orange,
+      pink: colors.pink,
+      purple: colors.purple,
+      red: colors.red,
+      rose: colors.rose,
+      sky: colors.sky,
+      slate: colors.slate,
+      stone: colors.stone,
+      teal: colors.teal,
+      violet: colors.violet,
+      white: colors.white,
+      yellow: colors.yellow,
+      zinc: colors.zinc,
+      "gv-primary-yellow": "rgb(255, 221, 0)",
+      "gv-yellow": {
+        50: "rgb(255, 251, 232)",
+        100: "rgb(255, 248, 204)",
+        200: "rgb(255, 241, 153)",
+        300: "rgb(255, 235, 102)",
+        400: "rgb(233, 202, 0)",
+        500: "rgb(204, 177, 0)",
+        600: "rgb(153, 133, 0)",
+        700: "rgb(102, 88, 0)",
+        800: "rgb(51, 44, 0)",
+        900: "rgb(26, 23, 0)",
+        number: "rgb(245, 255, 136)",
+      },
+      "gv-dark-gray": {
+        200: "rgb(204, 204, 204)",
+        300: "rgb(179, 179, 179)",
+        400: "rgb(153, 153, 153)",
+        500: "rgb(128, 128, 128)",
+        600: "rgb(102, 102, 102)",
+        700: "rgb(76, 76, 76)",
+        800: "rgb(51, 51, 51)",
+        850: "rgb(27,27, 27)",
+        900: "rgb(26, 26, 26)",
+      },
+      "gv-sand": "rgb(217, 216, 214)",
+      "gv-light-gray": {
+        200: "rgb(247, 247, 247)",
+        400: "rgb(239, 239, 239)",
+        500: "rgb(235, 235, 235)",
+        700: "rgb(229, 229, 229)",
+      },
+      "gv-status": {
+        success: "rgb(65, 158, 255)",
+        successful: "rgb(102, 199, 84)",
+        warning: "rgb(255, 184, 0)",
+        error: "rgb(232, 109, 109)",
+      },
+      "gv-sub": {
+        orange: "rgb(240, 158, 114)",
+        green: "rgba(73, 187, 153, 1)",
+        "yellow-green": "rgba(157, 205, 119, 1)",
+        yellow: "rgb(245, 210, 93)",
+        blue: "rgb(82, 159, 243)",
+        purple: "rgb(156, 117, 230)",
+        pink: "rgb(240, 126, 153)",
+      },
+      "blog-light-gray": {
+        100: "rgb(96, 96, 96)",
+      },
+      "blog-primary-blue": "rgb(28, 92, 255)",
+      // TODO: delete below colors
+      "ig-background": "hsl(var(--ig-background))",
+      border: "hsl(var(--border))",
+      input: "hsl(var(--input))",
+      ring: "hsl(var(--ring))",
+      background: "hsl(var(--background))",
+      foreground: "hsl(var(--foreground))",
+      primary: {
+        DEFAULT: "hsl(var(--primary))",
+        foreground: "hsl(var(--primary-foreground))",
+      },
+      secondary: {
+        DEFAULT: "hsl(var(--secondary))",
+        foreground: "hsl(var(--secondary-foreground))",
+      },
+      destructive: {
+        DEFAULT: "hsl(var(--destructive))",
+        foreground: "hsl(var(--destructive-foreground))",
+      },
+      muted: {
+        DEFAULT: "hsl(var(--muted))",
+        foreground: "hsl(var(--muted-foreground))",
+      },
+      accent: {
+        DEFAULT: "hsl(var(--accent))",
+        foreground: "hsl(var(--accent-foreground))",
+      },
+      popover: {
+        DEFAULT: "hsl(var(--popover))",
+        foreground: "hsl(var(--popover-foreground))",
+      },
+      card: {
+        DEFAULT: "hsl(var(--card))",
+        foreground: "hsl(var(--card-foreground))",
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
 export default config;

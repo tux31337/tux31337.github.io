@@ -12,5 +12,10 @@ export default async function PostPage({ params: { slug } }: Props) {
 
   console.log("slug", slug);
 
-  return <MarkdownViewer content={post.content} />;
+  return (
+    <article>
+      <h1>{post.title}</h1>
+      <MarkdownViewer content={post.content} />
+    </article>
+  );
 }

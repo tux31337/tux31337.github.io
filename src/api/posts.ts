@@ -9,6 +9,7 @@ export type Post = {
   category: string;
   path: string;
 };
+
 export type PostData = Post & { content: string };
 
 export async function getAllPosts(): Promise<Post[]> {

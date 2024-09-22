@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
 import Header from "./components/Header";
 import { cn } from "./lib/utils";
@@ -23,7 +22,7 @@ export default function RootLayout({
         )}
       >
         <Header />
-        <main className="grow bg-sky-400">{children}</main>
+        <main className="grow">{children}</main>
       </body>
     </html>
   );
