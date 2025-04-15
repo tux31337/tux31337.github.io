@@ -1,6 +1,7 @@
 ---
 title: "Graceful Shutdown 과 ThreadPoolTaskExecutor"
 excerpt: "Graceful Shutdown 과 ThreadPoolTaskExecutor에 대해 알아보자"
+
 categories:
   - Backend
 tags:
@@ -295,7 +296,6 @@ public class AsyncService {
         // 실제 처리 로직
     }
 }
-
 ```
 
 ### 특징:
@@ -340,7 +340,6 @@ public class AsyncService {
         return new Result(item.getId(), "Processed");
     }
 }
-
 ```
 
 ### 특징:
@@ -378,7 +377,6 @@ public class AsyncService {
         return new Result(item.getId(), "Processed");
     }
 }
-
 ```
 
 @Async를 사용하려면 @EnableAsync 어노테이션을 설정 클래스에 추가해야 합니다:
